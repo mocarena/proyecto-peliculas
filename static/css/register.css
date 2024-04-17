@@ -1,4 +1,14 @@
 :root {
+    /* Variables de css */
+        --bg-color:#181419;
+        --bg-input-color: #4f31572c;
+        --primary-color:#9f3647;
+        --secondary-color:#ffc098;
+        --third-color:#db4648;
+        --color: #fff;
+    }
+
+:root {
 
     font-size: 16px;
     font-family: Nunito, Georgia, 'Times New Roman', Times, serif
@@ -41,4 +51,62 @@ h2 {
 
 .relleno {
     font-variation-settings:'FILL' 1
+}
+
+footer {
+    background-color: var(--third-color);
+}
+footer a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color);
+
+}
+
+footer a:first-child {
+    background-color: rgb(122, 122, 202);
+    color: red;
+}
+
+footer a:nth-child(3) {
+    color: yellowgreen;
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h1{
+        font-size: 3vw;
+    }
+    #banner{
+        height: 400px;
+    }
+    #search{
+        height: 200px;
+    }
+    /* NEW quitamos que oculte logo */
+    /* #logo {
+        display: none;
+    } */
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    .search-container input {
+        background-color: #9f3647;
+    }
+
+    .login-text {
+        /* visibility: hidden; */
+        display: none;
+    }
+    nav{
+        height: auto;
+
+    }
+
+    .grid-pelis {
+        display: block;
+        /* grid-template-columns: repeat(2, 1fr) ; */
+    
+    }
 }
